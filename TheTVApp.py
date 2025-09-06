@@ -11,6 +11,7 @@ SECTIONS_TO_APPEND = {
     "/nba": "NBA",
     "/mlb": "MLB",
     "/wnba": "WNBA",
+    "/nfl": "NHL",
     "/nfl": "NFL",
     "/ncaaf": "NCAAF",
     "/ncaab": "NCAAB",
@@ -19,7 +20,7 @@ SECTIONS_TO_APPEND = {
     "/events": "Events"
 }
 
-SPORTS_GROUPS = {"MLB", "NFL", "NCAAF", "PPV", "NBA", "WNBA", "NCAAB", "Soccer"}
+SPORTS_GROUPS = {"MLB", "NFL", "NHL", "NCAAF", "PPV", "NBA", "WNBA", "NCAAB", "Soccer"}
 
 def extract_real_m3u8(url: str):
     if "ping.gif" in url and "mu=" in url:
@@ -48,7 +49,7 @@ async def scrape_tv_urls():
         for href in hrefs:
             full_url = BASE_URL + href
             print(f"🎯 Scraping TV page: {full_url}")
-            for quality in ["SD", "HD"]:
+            for quality in ["HD"]:
                 stream_url = None
                 new_page = await context.new_page()
 
@@ -98,7 +99,7 @@ async def scrape_section_urls(context, section_path, group_name):
         full_url = BASE_URL + href
         print(f"🎯 Scraping {group_name}: {title}")
 
-        for quality in ["SD", "HD"]:
+        for quality in ["HD"]:
             stream_url = None
             new_page = await context.new_page()
 
@@ -174,6 +175,8 @@ def append_new_streams(lines, new_urls_with_groups):
             ext = f'#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="{title}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/PPV.png" group-title="TheTVApp - PPV",{title}'
         elif group == "NFL":
             ext = f'#EXTINF:-1 tvg-id="NFL.Dummy.us" tvg-name="{title}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/NFL.png" group-title="TheTVApp - NFL",{title}'
+        elif group == "NFL":
+            ext = f'#EXTINF:-1 tvg-id="NHL.Dummy.us" tvg-name="{title}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/NHL.png" group-title="TheTVApp - NHL",{title}'
         elif group == "NCAAF":
             ext = f'#EXTINF:-1 tvg-id="NCAA.Football.Dummy.us" tvg-name="{title}" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/CFB.png" group-title="TheTVApp - NCAAF",{title}'
         else:
@@ -203,7 +206,7 @@ async def main():
 
     updated_lines = replace_urls_in_tv_section(lines, tv_new_urls)
 
-    print("\n📦 Scraping all sports sections (NBA, NFL, NCAAF, MLB, PPV, etc)...")
+    print("\n📦 Scraping all sports sections (NBA, NFL, NHL, NCAAF, MLB, PPV, etc)...")
     append_new_urls = await scrape_all_append_sections()
     if append_new_urls:
         updated_lines = append_new_streams(updated_lines, append_new_urls)
