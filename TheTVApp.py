@@ -20,7 +20,7 @@ SECTIONS_TO_APPEND = {
     "/events": "Events"
 }
 
-SPORTS_GROUPS = {"MLB", "NFL", "NHL", "NCAAF", "PPV", "NBA", "WNBA", "NCAAB", "Soccer"}
+SPORTS_GROUPS = {"MLB", "NFL", "NHL", "NCAAF", "PPV", "NBA", "WNBA", "NCAAB", "Soccer", "Events"}
 
 def extract_real_m3u8(url: str):
     if "ping.gif" in url and "mu=" in url:
