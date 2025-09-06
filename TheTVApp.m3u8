@@ -191,7 +191,7 @@ https://v4.thetvapp.to/hls/SundanceTVEast/tracks-v1a1/mono.m3u8?token=GtXWFXjJwd
 #EXTINF:-1  tvg-name="Tennis Channel HD" tvg-id="the-tennis-channel" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tennis-channel-hz-us.png?raw=true" group-title="TheTVApp",Tennis Channel HD
 https://v13.thetvapp.to/hls/TBSEast/tracks-v1a1/mono.m3u8?token=4GFnaygUIpYoJNsLPJD54A&expires=1757193980&user_id=Z0t0WWRkMlpISHdVM21TV3RwaGthemk2dFZISkxrdUV6ZkFHRGRHWg==
 #EXTINF:-1  tvg-name="The CW (WPIX New York) HD" tvg-id="wpix-new-york-superstation" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/canada/cw-ca.png?raw=true" group-title="TheTVApp",The CW (WPIX New York) HD
-https://v5.thetvapp.to/hls/TCMEast/tracks-v1a1/mono.m3u8?token=4IRRTp1eZRUBRoKF05-KYw&expires=1757193989&user_id=Z0t0WWRkMlpISHdVM21TV3RwaGthemk2dFZISkxrdUV6ZkFHRGRHWg==
+https://v15.thetvapp.to/hls/WPIX/tracks-v2a1/mono.m3u8?token=zI8ZKn2RFGk8wSWx3hO37g&expires=1757209603&user_id=eXNLaHlPdE5oc3FUUjlFemRmWlNmQ1Y2NEY0V1c1TXlocGFLSEcxaQ==
 #EXTINF:-1  tvg-name="The Movie Channel East HD" tvg-id="tmc-us-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/the-movie-channel-us.png?raw=true" group-title="TheTVApp",The Movie Channel East HD
 https://v8.thetvapp.to/hls/TeenNickEast/tracks-v1a1/mono.m3u8?token=0kE2ATSudPoHN2S_ygtZ0g&expires=1757193998&user_id=Z0t0WWRkMlpISHdVM21TV3RwaGthemk2dFZISkxrdUV6ZkFHRGRHWg==
 #EXTINF:-1  tvg-name="The Weather Channel HD" tvg-id="the-weather-channel" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/weather-channel-us.png?raw=true" group-title="TheTVApp",The Weather Channel HD
