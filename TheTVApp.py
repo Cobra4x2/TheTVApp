@@ -11,7 +11,7 @@ SECTIONS_TO_APPEND = {
     "/nba": "NBA",
     "/mlb": "MLB",
     "/wnba": "WNBA",
-    "/nfl": "NHL",
+    "/nhl": "NHL",
     "/nfl": "NFL",
     "/ncaaf": "NCAAF",
     "/ncaab": "NCAAB",
