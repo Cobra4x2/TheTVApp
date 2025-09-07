@@ -20,7 +20,7 @@ SECTIONS_TO_APPEND = {
     "/events": "Events"
 }
 
-SPORTS_GROUPS = {"MLB", "NFL", "NHL", "NCAAF", "PPV", "NBA", "WNBA", "NCAAB", "Soccer", "Events"}
+SPORTS_GROUPS = {"MLB", "NFL", "NHL", "NCAAF", "PPV", "NBA", "WNBA", "NCAAB", "Soccer"}
 
 def extract_real_m3u8(url: str):
     if "ping.gif" in url and "mu=" in url:
@@ -41,7 +41,7 @@ async def scrape_tv_urls():
         page = await context.new_page()
 
         print(f"🔄 Loading /tv channel list...")
-        await page.goto(CHANNEL_LIST_URL, timeout=60000)
+        await page.goto(CHANNEL_LIST_URL, timeout=75000)
         links = await page.locator("ol.list-group a").all()
         hrefs = [await link.get_attribute("href") for link in links if await link.get_attribute("href")]
         await page.close()
@@ -62,7 +62,7 @@ async def scrape_tv_urls():
                 new_page.on("response", handle_response)
                 await new_page.goto(full_url)
                 try:
-                    await new_page.get_by_text(f"Load {quality} Stream", exact=True).click(timeout=5000)
+                    await new_page.get_by_text(f"Load {quality} Stream", exact=True).click(timeout=7500)
                 except:
                     pass
                 await asyncio.sleep(4)
@@ -82,7 +82,7 @@ async def scrape_section_urls(context, section_path, group_name):
     page = await context.new_page()
     section_url = BASE_URL + section_path
     print(f"\n📁 Loading section: {section_url}")
-    await page.goto(section_url, timeout=60000)
+    await page.goto(section_url, timeout=75000)
     links = await page.locator("ol.list-group a").all()
     hrefs_and_titles = []
 
@@ -110,10 +110,10 @@ async def scrape_section_urls(context, section_path, group_name):
                     stream_url = real
 
             new_page.on("response", handle_response)
-            await new_page.goto(full_url, timeout=60000)
+            await new_page.goto(full_url, timeout=75000)
 
             try:
-                await new_page.get_by_text(f"Load {quality} Stream", exact=True).click(timeout=5000)
+                await new_page.get_by_text(f"Load {quality} Stream", exact=True).click(timeout=7500)
             except:
                 pass
 
@@ -121,7 +121,7 @@ async def scrape_section_urls(context, section_path, group_name):
             await new_page.close()
 
             if stream_url:
-                # Append SD/HD to title for sports section
+                # Append HD to title for sports section
                 urls.append((stream_url, group_name, f"{title} {quality}"))
                 print(f"✅ {quality}: {stream_url}")
             else:
@@ -214,7 +214,7 @@ async def main():
     with open(M3U8_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(updated_lines))
 
-    print(f"\n✅ {M3U8_FILE} updated: /tv untouched, sports section refreshed, SD/HD appended, logos injected, TheTVApp groups applied.")
+    print(f"\n✅ {M3U8_FILE} updated: /tv untouched, sports section refreshed, HD appended, logos injected, TheTVApp groups applied.")
 
 if __name__ == "__main__":
     asyncio.run(main())
