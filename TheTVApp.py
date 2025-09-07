@@ -57,7 +57,7 @@ async def scrape_tv_urls():
             title = " - ".join(line.strip() for line in title_raw.splitlines() if line.strip())
             print(f"🎯 Scraping TV page: {full_url}")
 
-            for quality in ["SD", "HD"]:
+            for quality in ["HD"]:
                 stream_url = None
                 new_page = await context.new_page()
 
@@ -108,7 +108,7 @@ async def scrape_section_urls(context, section_path, group_name):
         full_url = BASE_URL + href
         print(f"🎯 Scraping {group_name}: {title}")
 
-        for quality in ["SD", "HD"]:
+        for quality in ["HD"]:
             stream_url = None
             new_page = await context.new_page()
 
