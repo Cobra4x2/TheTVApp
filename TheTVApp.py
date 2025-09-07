@@ -13,6 +13,7 @@ SECTIONS_TO_APPEND = {
     "/mlb": "MLB",
     "/wnba": "WNBA",
     "/nfl": "NFL",
+    "/nhl": "NHL",
     "/ncaaf": "NCAAF",
     "/ncaab": "NCAAB",
     "/soccer": "Soccer",
@@ -24,6 +25,7 @@ SPORTS_METADATA = {
     "MLB": {"tvg-id": "MLB.Baseball.Dummy.us", "logo": "http://drewlive24.duckdns.org:9000/Logos/Baseball-2.png"},
     "PPV": {"tvg-id": "PPV.EVENTS.Dummy.us", "logo": "http://drewlive24.duckdns.org:9000/Logos/PPV.png"},
     "NFL": {"tvg-id": "NFL.Dummy.us", "logo": "http://drewlive24.duckdns.org:9000/Logos/NFL.png"},
+    "NHL": {"tvg-id": "NFL.Dummy.us", "logo": "http://drewlive24.duckdns.org:9000/Logos/NHL.png"},
     "NCAAF": {"tvg-id": "NCAA.Football.Dummy.us", "logo": "http://drewlive24.duckdns.org:9000/Logos/CFB.png"},
 }
 
