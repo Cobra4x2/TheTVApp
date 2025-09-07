@@ -56,7 +56,6 @@ https://v14.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=j4WyLiW0YnLnIXSGG
 
 #EXTINF:-1  tvg-name="CNN HD" tvg-id="cnn" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true" group-title="TheTVApp",CNN HD
 https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=3JFm2DIORIvtHA_pFHGpCg&expires=1757290952&user_id=RkVaS2NrV2ZiaVV1YWc1ZGpJZDE5NGJ3cmNQaklqeUJGOXZvV013Vg==
-#EXTINF:-1  tvg-name="Comedy Central SD" tvg-id="Comedy.Central.(US).-.Eastern.Feed.us" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Comedy.png" group-title="TheTVApp",Comedy Central SD
 
 #EXTINF:-1  tvg-name="Comedy Central HD" tvg-id="Comedy.Central.(US).-.Eastern.Feed.us" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Comedy.png" group-title="TheTVApp",Comedy Central HD
 https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=j8trLdOg2BK0tinwCQQmLw&expires=1757290957&user_id=RkVaS2NrV2ZiaVV1YWc1ZGpJZDE5NGJ3cmNQaklqeUJGOXZvV013Vg==
