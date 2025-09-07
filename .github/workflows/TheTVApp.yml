@@ -2,7 +2,7 @@ name: 🚀 Update TheTVApp Playlist 📺
 
 on:
   schedule:
-    - cron: '1 * * * *'  # ⏰ Run at 1 min after midnight (UTC)
+    - cron: '1 * * * *'  # ⏰ Run 1 min after midnight
   workflow_dispatch:      # 🔘 Manual trigger
 
 permissions:
@@ -41,7 +41,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # Stage the output
-          git pull TheTVApp.m3u8
+          git add TheTVApp.m3u8
 
           # Check if file actually changed
           if git diff --cached --quiet; then
