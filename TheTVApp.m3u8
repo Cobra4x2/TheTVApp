@@ -153,7 +153,6 @@ https://v3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=7o9yktnSxGsFyIlpje
 
 #EXTINF:-1  tvg-name="Hallmark Movies & Mysteries HD HD" tvg-id="hallmark-mystery-eastern-hd" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hallmark-mystery-us.png?raw=true" group-title="TheTVApp",Hallmark Movies & Mysteries HD HD
 https://e3.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Hl6-CD5KUgf1eaXZvzZmiA&expires=1757291099&user_id=RkVaS2NrV2ZiaVV1YWc1ZGpJZDE5NGJ3cmNQaklqeUJGOXZvV013Vg==
-#EXTINF:-1  tvg-name="HBO 2 East SD" tvg-id="hbo-2-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-2-us.png?raw=true" group-title="TheTVApp",HBO 2 East SD
 
 #EXTINF:-1  tvg-name="HBO 2 East HD" tvg-id="hbo-2-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-2-us.png?raw=true" group-title="TheTVApp",HBO 2 East HD
 https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-bYpOk_g812xGsGosqOaRQ&expires=1757291103&user_id=RkVaS2NrV2ZiaVV1YWc1ZGpJZDE5NGJ3cmNQaklqeUJGOXZvV013Vg==
@@ -256,7 +255,6 @@ https://v15.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=5yWeEOOSIdhn9irOc
 
 #EXTINF:-1  tvg-name="OWN HD" tvg-id="oprah-winfrey-network-usa-eastern" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/oprah-winfrey-network-us.png?raw=true" group-title="TheTVApp",OWN HD
 https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=gIPxIC_RVSVrQAeTjPe1ug&expires=1757291277&user_id=RkVaS2NrV2ZiaVV1YWc1ZGpJZDE5NGJ3cmNQaklqeUJGOXZvV013Vg==
-#EXTINF:-1  tvg-name="Oxygen True Crime SD" tvg-id="oxygen-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/oxygen-us.png?raw=true" group-title="TheTVApp",Oxygen True Crime SD
 
 #EXTINF:-1  tvg-name="Oxygen True Crime HD" tvg-id="oxygen-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/oxygen-us.png?raw=true" group-title="TheTVApp",Oxygen True Crime HD
 https://e1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=PMGX3NI51z0NdwxS1griJg&expires=1757291281&user_id=RkVaS2NrV2ZiaVV1YWc1ZGpJZDE5NGJ3cmNQaklqeUJGOXZvV013Vg==
