@@ -2,7 +2,7 @@ name: 🚀 Update TheTVApp Playlist 📺
 
 on:
   schedule:
-    - cron: '5 */2 * * *'  # ⏰ Run at 5 past every 8 hrs
+    - cron: '5 */2 * * *'  # ⏰ Run at 5 past every 2 hrs
   workflow_dispatch:      # 🔘 Manual trigger
 
 permissions:
